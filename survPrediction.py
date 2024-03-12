@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn import tree
 import os
 
-location = r'D:\Projects\Titanic\titanic.csv'
+location = r'~\titanic.csv'
 df = pd.read_csv(location)
 
 df = df[['Pclass', 'Fare', 'Age', 'Sex', 'Survived']][~df.Age.isnull()]
